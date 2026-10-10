@@ -63,6 +63,4 @@ lib/
 
 Under active development as a university project.
 
-## License
 
-MIT. See [LICENSE](LICENSE).
