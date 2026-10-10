@@ -1,17 +1,68 @@
-# boarding_manager
+# Boarding Manager
 
-A new Flutter project.
+A Flutter app for managing a large boarding house: boarder registration and approval, monthly billing (rent, electricity, water), payments, and staff management.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+**Manager**
+- Approve or reject boarder signups
+- Add and manage boarders and staff
+- Record electricity and water readings
+- Generate monthly bills and record payments
 
-A few resources to get you started if this is your first Flutter project:
+**Boarder**
+- Sign up and wait for manager approval
+- View personal information and monthly bills
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+**Planned**
+- Online card payment
+- Bank transfer slip upload with manager approval
+- Complaint submission and tracking
+- Backend API integration (shared data across devices)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech stack
+
+- Flutter (Dart)
+- SQLite (`sqflite`) for local storage
+
+## Getting started
+
+### Prerequisites
+- [Flutter SDK](https://docs.flutter.dev/get-started/install)
+- Android Studio (for the Android SDK and emulator)
+
+### Run
+
+```bash
+git clone https://github.com/<your-username>/boarding_manager.git
+cd boarding_manager
+flutter pub get
+flutter run
+```
+
+### Build an APK
+
+```bash
+flutter build apk --release --split-per-abi
+```
+
+The APK files are written to `build/app/outputs/flutter-apk/`.
+
+## Project structure
+
+```
+lib/
+  auth/        authentication logic
+  models/      data models
+  pages/       screens (manager and boarder)
+  services/    database and API services
+  main.dart    app entry point
+```
+
+## Status
+
+Under active development as a university project.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
